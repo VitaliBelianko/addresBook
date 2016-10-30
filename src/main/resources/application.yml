@@ -1,0 +1,9 @@
+dataSource:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql:localhost:5432/address
+  username: postgres
+  password: saldaine123
+
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  hbm2ddl.auto: update
