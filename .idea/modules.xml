@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addresBook.iml" filepath="$PROJECT_DIR$/.idea/modules/addresBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addresBook_main.iml" filepath="$PROJECT_DIR$/.idea/modules/addresBook_main.iml" group="addresBook" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addresBook_test.iml" filepath="$PROJECT_DIR$/.idea/modules/addresBook_test.iml" group="addresBook" />
+    </modules>
+  </component>
+</project>
