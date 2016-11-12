@@ -2,6 +2,7 @@ package com.lemur.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
@@ -10,11 +11,22 @@ import java.util.UUID;
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Contact implements DomainObject {
 
-	private UUID id;
+	private UUID id = UUID.randomUUID();
 	private String firstName;
 	private String lastName;
 	private String phone;
 	private String address;
+
+	@Override
+	public void test() {
+		System.out.println("Contact");
+		ContactInherited contactInherited = new ContactInherited();
+	}
+
+	private class ContactInherited{}
+
+	private class ContractInherited2{}
 }

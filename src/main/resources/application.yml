@@ -1,8 +1,10 @@
+server.port: 9000
+
 dataSource:
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql:localhost:5432/address
+  url: jdbc:postgresql://localhost:5432/address
   username: postgres
-  password: saldaine123
+  password: postgres
 
 hibernate:
   dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -14,6 +14,10 @@ buildscript {
     }
 }
 
+configurations {
+    driver
+}
+
 apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'idea'
@@ -27,10 +31,11 @@ repositories {
 }
 
 dependencies {
+    driver 'org.postgresql:postgresql:9.4.1208.jre7'
     compile("org.springframework.boot:spring-boot-starter-web") {
         exclude module: "spring-boot-starter-tomcat"
     }
-    compile("org.hibernate:hibernate-core:5.2.4.Final")
+    compile('org.postgresql:postgresql:9.4.1208.jre7')
     compile("org.springframework.boot:spring-boot-starter-jetty")
     compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.springframework.boot:spring-boot-starter-actuator")
