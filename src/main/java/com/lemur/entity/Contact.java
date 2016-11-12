@@ -25,6 +25,7 @@ public class Contact implements DomainObject {
 		System.out.println("Contact");
 		ContactInherited contactInherited = new ContactInherited();
 		//Before cherry-pick
+		//after cherry-pick
 	}
 
 	private class ContactInherited{}
